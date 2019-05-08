@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# product-management-api
 
-=======
 # product-manager-services
 A REST API based project with Security OAuth + JWT
 
@@ -9,4 +6,4 @@ A REST API based project with Security OAuth + JWT
 
 1> Install Mongodb and run the server
 2> Run the project by running class ApplicationRunner.java
->>>>>>> origin/master
+
