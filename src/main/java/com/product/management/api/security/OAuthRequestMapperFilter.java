@@ -4,7 +4,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
-import java.util.Objects;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -32,7 +31,7 @@ public class OAuthRequestMapperFilter implements Filter {
 	@Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException,
             ServletException {
-        if (Objects.equals(((HttpServletRequest)request).getContentType(), MediaType.APPLICATION_JSON_VALUE) && ((HttpServletRequest)request).getServletPath().contains("/oauth/token")) {
+        if (((HttpServletRequest)request).getContentType().contains(MediaType.APPLICATION_JSON_VALUE) && ((HttpServletRequest)request).getServletPath().contains("/oauth/token")) {
             InputStream is = request.getInputStream();
             ByteArrayOutputStream buffer = new ByteArrayOutputStream();
 

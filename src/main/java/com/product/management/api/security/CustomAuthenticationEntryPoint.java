@@ -25,8 +25,7 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
 									        .put("status", HttpStatus.UNAUTHORIZED)
 									        .put("message", "Access Denied")
 									        .toString());
-		} catch (JSONException e) {
-			// TODO Auto-generated catch block
+		} catch (JSONException e) {			
 			e.printStackTrace();
 		}
     }
