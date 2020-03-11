@@ -1,6 +1,6 @@
 
-# product-management-services
-A REST API based project with Security OAuth + JWT
+# OAuth + JWT security based REST API project
+
 
 # Steps to get the project up and running:
 
